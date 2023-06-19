@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "reanimated-learning-app",
+    "slug": "reanimated-learning-app"
+  }
+}
