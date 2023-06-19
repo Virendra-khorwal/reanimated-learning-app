@@ -1,15 +1,46 @@
 
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView, StyleSheet } from 'react-native'
+import Card from '../components/Card';
+
+const GestureNames = [{
+  name: "Pan Gesture",
+  path: "/animation/PanGesture/",
+}]
 
 const Home = () => {
   return (
-    <View>
-        <Text>
-            Home
+    <View style={styles.container}>
+        <Text style={styles.title}>
+            Reanimated Different Animations
         </Text>
+        <ScrollView style={styles.scrollView}>
+          {
+            GestureNames.map((gesture, index) => (
+              <Card key={index} title={gesture.name} goTo={gesture.path} />
+            ))
+          }
+          
+        </ScrollView>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  container: {
+    alignItems: "center",
+    marginTop: 40,
+    flex: 1,
+  },
+  scrollView: {
+    marginVertical: 20,
+    width: "100%",
+    paddingHorizontal: 50,
+  }
+})
 
 export default Home;

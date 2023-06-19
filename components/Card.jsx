@@ -1,11 +1,31 @@
-import { Text, View } from "react-native"
+import { useRouter } from "expo-router";
+import { Pressable, Text, View, StyleSheet } from "react-native"
 
-const Card = ({ children }) => {
+const Card = ({ title, goTo }) => {
+    const route = useRouter();
     return (
-        <View>
-            {children}
+      <Pressable style={styles.outerContainer} onPress={() => route.push(goTo)} >
+        <View style={styles.innerContainer}>
+          <Text style={styles.title}>{title}</Text>
         </View>
-    )
+      </Pressable>
+    );
 }
+
+const styles = StyleSheet.create({
+    outerContainer: {
+        borderColor: "black",
+        borderWidth: 1,
+        borderRadius: 4,
+    },
+    innerContainer: {
+        padding: 16,
+        alignItems: "center",
+    },
+    title: {
+        fontSize: 18,
+        fontWeight: "500",
+    },
+})
 
 export default Card;

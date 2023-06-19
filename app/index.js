@@ -9,13 +9,19 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
+        <MaterialIcons name="motion-photos-on" size={50} color="#000" />
         <Text style={styles.title}>Reanimated</Text>
         <Text style={styles.subtitle}>
           This is the to practice animation using reanimated package. It will
           include all type of animation reanimated provide.
         </Text>
-        <CustomButton style={styles.button} onPress={() => router.replace('/home')} >
-          <Text style={{ color: "white", fontSize: 24, fontWeight: '600' }}>Let's Start</Text>
+        <CustomButton
+          style={styles.button}
+          onPress={() => router.replace("/home")}
+        >
+          <Text style={{ color: "white", fontSize: 24, fontWeight: "600" }}>
+            Let's Start
+          </Text>
           <MaterialIcons name="keyboard-arrow-right" size={30} color="white" />
         </CustomButton>
       </View>
@@ -34,6 +40,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     maxWidth: 960,
     marginHorizontal: "auto",
+    alignItems: "center",
   },
   title: {
     fontSize: 58,
