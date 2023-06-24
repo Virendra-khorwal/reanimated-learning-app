@@ -19,7 +19,7 @@ export default function Page() {
           style={styles.button}
           onPress={() => router.replace("/home")}
         >
-          <Text style={{ color: "white", fontSize: 24, fontWeight: "600" }}>
+          <Text style={{ color: "white", fontSize: 24, fontWeight: "600", paddingHorizontal: 20, }}>
             Let's Start
           </Text>
           <MaterialIcons name="keyboard-arrow-right" size={30} color="white" />
