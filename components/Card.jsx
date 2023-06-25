@@ -4,7 +4,11 @@ import { Pressable, Text, View, StyleSheet } from "react-native"
 const Card = ({ title, goTo }) => {
     const route = useRouter();
     return (
-      <Pressable style={styles.outerContainer} onPress={() => route.push(goTo)} >
+      <Pressable
+        style={styles.outerContainer}
+        onPress={() => route.push(goTo)}
+        android_ripple={{ color: "#0f000", }}
+      >
         <View style={styles.innerContainer}>
           <Text style={styles.title}>{title}</Text>
         </View>
@@ -27,6 +31,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: "500",
     },
+
 })
 
 export default Card;
