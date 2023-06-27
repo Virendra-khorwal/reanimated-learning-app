@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 import InterpolateScrollViewComponent from "../../../components/InterpolateScrollViewComponent";
 import Animated,{ useAnimatedScrollHandler, useSharedValue } from "react-native-reanimated";
 import { Stack } from "expo-router";
+import { useSearchParams } from "expo-router";
 
 const WORDS = ["What's", "up", "mobile", "devs?"]
 
@@ -9,6 +10,7 @@ const WORDS = ["What's", "up", "mobile", "devs?"]
 const InterPolateWithScrollView = () => {
 
   const translateX = useSharedValue(0);
+  const params = useSearchParams();
 
   const scrollHandler = useAnimatedScrollHandler((event) => {
     translateX.value = event.contentOffset.x;
@@ -17,7 +19,7 @@ const InterPolateWithScrollView = () => {
   return (
     <>
       <Stack.Screen options={{
-        headerTitle: "Interpolate With ScrollView",
+        headerTitle: params.title,
         headerStyle: {
           backgroundColor: "rgb(0,80,230)",
         },

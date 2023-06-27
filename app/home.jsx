@@ -11,6 +11,10 @@ const GestureNames = [
     name: "Interpolate with ScrollView",
     path: "/animation/InterPolateWithScrollView/",
   },
+  {
+    name: "Interpolate Color",
+    path: "/animation/InterpolateColor/",
+  }
 ];
 
 const Home = () => {

@@ -7,6 +7,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { PanGestureHandler } from "react-native-gesture-handler";
 import Head from "expo-router/head";
+import { useSearchParams } from "expo-router";
 
 const SIZE = 100;
 const CIRCLE_RADIUS = SIZE * 2;
@@ -14,6 +15,8 @@ const CIRCLE_RADIUS = SIZE * 2;
 const PanGesture = () => {
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
+  const params = useSearchParams();
+  
 
   const panGestureEvent = useAnimatedGestureHandler({
     onStart: (event, context) => {
@@ -47,7 +50,7 @@ const PanGesture = () => {
   return (
     <>
       <Head>
-        <title>Pan Gesture</title>
+        <title>{params.title}</title>
       </Head>
       <View style={styles.container}>
         <PanGestureHandler onGestureEvent={panGestureEvent}>

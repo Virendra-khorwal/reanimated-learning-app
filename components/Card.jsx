@@ -6,7 +6,7 @@ const Card = ({ title, goTo }) => {
     return (
       <Pressable
         style={styles.outerContainer}
-        onPress={() => route.push(goTo)}
+        onPress={() => route.push({ pathname:goTo,  params: { title }})}
         android_ripple={{ color: "#0f000", }}
       >
         <View style={styles.innerContainer}>
