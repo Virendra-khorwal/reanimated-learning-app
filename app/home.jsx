@@ -14,6 +14,10 @@ const GestureNames = [
   {
     name: "Interpolate Color",
     path: "/animation/InterpolateColor/",
+  },
+  {
+    name: "Basic Pinch Gesture",
+    path: "/animation/BasicPinchGesture/",
   }
 ];
 
