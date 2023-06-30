@@ -1,4 +1,4 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, StatusBar, StyleSheet, Text, View } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
@@ -19,12 +19,20 @@ export default function Page() {
           style={styles.button}
           onPress={() => router.replace("/home")}
         >
-          <Text style={{ color: "white", fontSize: 24, fontWeight: "600", paddingHorizontal: 20, }}>
+          <Text
+            style={{
+              color: "white",
+              fontSize: 24,
+              fontWeight: "600",
+              paddingHorizontal: 20,
+            }}
+          >
             Let's Start
           </Text>
           <MaterialIcons name="keyboard-arrow-right" size={30} color="white" />
         </CustomButton>
       </View>
+      <StatusBar style="" />
     </View>
   );
 }
