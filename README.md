@@ -16,5 +16,6 @@ npx create-expo-app -e with-router
 ## This app include following Reanimated Animation
 - [Pan Gesture](./app/animation/PanGesture/index.jsx)
 - [Interpolate with Screen](./app/animation/InterPolateWithScreen/index.jsx)
-- [Interpolate with coler](./app/animation/InterpolateColor/index.jsx)
-- Basic Pinch Gesture -- working  
+- [Interpolate with color](./app/animation/InterpolateColor/index.jsx)
+- [Basic Pinch Gesture](./app/animation/AnimateOnDoubleTap/index.jsx)
+- Animate on Double Tap -- working 

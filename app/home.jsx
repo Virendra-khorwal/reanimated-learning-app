@@ -18,6 +18,10 @@ const GestureNames = [
   {
     name: "Basic Pinch Gesture",
     path: "/animation/BasicPinchGesture/",
+  },
+  {
+    name: "Animate on Double Tap",
+    path: "/animation/AnimateOnDoubleTap/",
   }
 ];
 
