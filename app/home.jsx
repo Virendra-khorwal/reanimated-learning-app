@@ -22,6 +22,10 @@ const GestureNames = [
   {
     name: "Animate on Double Tap",
     path: "/animation/AnimateOnDoubleTap/",
+  },
+  {
+    name: "Scrollview with Pan Gesture",
+    path: "/animation/ScrollViewWithPanGesture/",
   }
 ];
 
