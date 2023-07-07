@@ -26,6 +26,10 @@ const GestureNames = [
   {
     name: "Scrollview with Pan Gesture",
     path: "/animation/ScrollViewWithPanGesture/",
+  },
+  {
+    name: "Color Picker Animation",
+    path: "/animation/ColorPickerAnimation/",
   }
 ];
 
