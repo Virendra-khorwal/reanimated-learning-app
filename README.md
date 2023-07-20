@@ -20,4 +20,4 @@ npx create-expo-app -e with-router
 - [Basic Pinch Gesture](./app/animation/AnimateOnDoubleTap/index.jsx)
 - [Animate on Double Tap](./app/animation/AnimateOnDoubleTap/index.jsx)
 - [Scrollview with Pan Gesture](./app/animation/ScrollviewWithPanGesture/index.jsx)
-- [Color Picker Animation](./app/animation/ColorPickerAnimation/index.jsx) - working on it
+- [Color Picker Animation](./app/animation/ColorPickerAnimation/index.jsx)
