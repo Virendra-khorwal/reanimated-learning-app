@@ -30,6 +30,10 @@ const GestureNames = [
   {
     name: "Color Picker Animation",
     path: "/animation/ColorPickerAnimation/",
+  },
+  {
+    name: "Circular Progress Bar",
+    path: "/animation/CircularProgressBar/",
   }
 ];
 
